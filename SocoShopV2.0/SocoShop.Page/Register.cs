@@ -51,7 +51,7 @@
             }
             if (this.errorMessage == string.Empty && form == string.Empty || str4 == string.Empty) this.errorMessage = "密码不能为空";
             if (this.errorMessage == string.Empty && form != str4) this.errorMessage = "两次密码不一致";
-            if (this.errorMessage == string.Empty && str5.ToLower() != Cookies.Common.CheckCode.ToLower()) this.errorMessage = "验证码错误";
+            //if (this.errorMessage == string.Empty && str5.ToLower() != Cookies.Common.CheckCode.ToLower()) this.errorMessage = "验证码错误";
             if (this.errorMessage == string.Empty)
             {
                 UserInfo user = new UserInfo();
